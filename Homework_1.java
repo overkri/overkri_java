@@ -50,7 +50,7 @@ public class Homework_1 {
                     return (String.format("Число положительное"));
                 } else return(String.format("Число отрицательное"));
             }
-     //Задание6//
+     //Задание 6//
           private static boolean homework_1_6 ( int if_negative) {
                 if_negative = scanner.nextInt();
             if (if_negative < 0) {
