@@ -53,7 +53,7 @@ public class Homework_1 {
      //Задание6//
           private static boolean homework_1_6 ( int if_negative) {
                 if_negative = scanner.nextInt();
-            if (if_negative <= 0) {
+            if (if_negative < 0) {
                 return (true);
         }   else return (false);
     }
