@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.*;
 
 public class homework_2 {
     private static Scanner scanner = new Scanner(System.in);
@@ -124,20 +124,20 @@ public class homework_2 {
         if (n > C) {
             n = n % C;
         }
-        int tmp=0;
+        int tmp = 0;
         if (n > 0) {
             for (int i = 0; i < n; i++) {
                 tmp = arr_7[0];
-                for (int j = 0; j < C-1 ; j++) {
+                for (int j = 0; j < C - 1; j++) {
                     arr_7[j] = arr_7[j + 1];
                 }
-                arr_7[C-1] = tmp;
+                arr_7[C - 1] = tmp;
             }
-        }else if (n < 0){
+        } else if (n < 0) {
             n = Math.abs(n);
-            for (int i = 0; i < n; i++){
+            for (int i = 0; i < n; i++) {
                 tmp = arr_7[0];
-                for (int j = 1; j < C-1; j++)
+                for (int j = 1; j < C - 1; j++)
                     arr_7[j - 1] = arr_7[j];
             }
             arr_7[C] = tmp;
