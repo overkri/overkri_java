@@ -113,19 +113,35 @@ public class homework_2 {
         return (j == 1);
     }
 
-    /*//Задание 7// - Не успел сделать
-    private static int[] MoveArray() {
+    //Задание 7//
+    private static int[] MoveArrayElements() {
         int C = scanner.nextInt();
-        int n = scanner.nextInt();
-        if (n > C) {
-            n = n % C;
-        }
         int arr_7[] = new int[C];
         for (int i = 0; i < C; ++i) {
             arr_7[i] = scanner.nextInt();
         }
-
+        int n = scanner.nextInt();
+        if (n > C) {
+            n = n % C;
+        }
+        int tmp=0;
+        if (n > 0) {
+            for (int i = 0; i < n; i++) {
+                tmp = arr_7[0];
+                for (int j = 0; j < C-1 ; j++) {
+                    arr_7[j] = arr_7[j + 1];
+                }
+                arr_7[C-1] = tmp;
+            }
+        }else if (n < 0){
+            n = Math.abs(n);
+            for (int i = 0; i < n; i++){
+                tmp = arr_7[0];
+                for (int j = 1; j < C-1; j++)
+                    arr_7[j - 1] = arr_7[j];
+            }
+            arr_7[C] = tmp;
+        }
         return (arr_7);
-
-    }*/
+    }
 }
