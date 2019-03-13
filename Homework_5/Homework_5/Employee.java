@@ -25,11 +25,4 @@ public class Employee {
         System.out.println(Name_SURNAME_FAMILYNAME + ", " + Profession + ", " + Email + ", " + CellNumber + ", " + Salary + ", " + Age);
     }
 
-    /*static void OlderThan40(String[] Employee_arr) {
-        for (String i : Employee_arr) {
-            if (getAge() > 40) {
-                info();
-            }
-        }
-    }*/
 }
