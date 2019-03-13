@@ -26,7 +26,6 @@ public class Main {
         }
         System.out.println();
         System.out.println("The list of employees older than 40 years.");
-        //Employee.OlderThan40(EmployeeArray);
 
         for (Employee Employee : EmployeeArray) {
             if (Employee.getAge() > 40) {
